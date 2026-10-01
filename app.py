@@ -64,6 +64,14 @@ conn.execute(
     """
 )
 
+
+conn.execute(
+    """
+    INSERT INTO vehiculos (placa, marca, modelo, cliente_id)
+    VALUES ('5678-XYZ', 'Nissan', 'Sentra', 1)
+    """
+)
+
 conn.execute(
     """
     INSERT INTO servicios (descripcion, costo)
