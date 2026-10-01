@@ -78,6 +78,13 @@ conn.execute(
     """
 )
 
+
+conn.execute(
+    """
+    INSERT INTO servicios (descripcion, costo)
+    VALUES ('Revision de frenos', 120.0)
+    """
+)
 conn.commit()
 
 # --- Órdenes de trabajo (relación vehículo-servicio) ---
